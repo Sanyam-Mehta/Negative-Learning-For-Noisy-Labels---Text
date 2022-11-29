@@ -3,17 +3,9 @@ from utils import read_sst5
 import pandas as pd
 import torch
 
-dataset_location = "/media/sanyam/WorkDirectory/IIIT_Delhi/Midas/reimagined-guacamole/nl-nl/Data/sst5"
-ULMFIT_MODEL_LOCATION = "/media/sanyam/WorkDirectory/IIIT_Delhi/Midas/reimagined-guacamole/nl-nl/Saved/ULMFit"
+dataset_location = "/datasets/location"
+ULMFIT_MODEL_LOCATION = "/path/to/model"
 
-
-# datasets = read_sst5(dataset_location)
-#
-# df_train = datasets["train"]
-# df_dev = datasets["dev"]
-#
-# df = pd.concat([df_train, df_dev])
-# df.to_csv("/media/sanyam/WorkDirectory/IIIT_Delhi/Midas/reimagined-guacamole/nl-nl/Data/sst5/Text/text.csv", index=False, header=False)
 
 class Callback():
     "Base class for callbacks that want to record values, dynamically change learner params, etc."
