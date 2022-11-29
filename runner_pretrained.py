@@ -11,9 +11,9 @@ from models.WordCNN import CNN1d
 
 total_epochs = 10000
 batch_size = 512
-embedding_location = "/path/to/embedding/" #"/media/data_dump_2/Sanyam/crawl-300d-2M.vec"
+embedding_location = "/path/to/embedding/" 
 load_dataset = read_sst5
-dataset_location = "/media/sanyam/WorkDirectory/IIIT_Delhi/Midas/reimagined-guacamole/nl-nl/Data/sst5"
+dataset_location = "/path/to/embedding/dataset"
 tokenizer = word_tokenize
 TEXT_COL, LABEL_COL = 'text', 'sentiment'
 
