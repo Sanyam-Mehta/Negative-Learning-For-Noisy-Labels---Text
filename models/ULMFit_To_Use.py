@@ -27,8 +27,8 @@ class ComplementProbabilities(LearnerCallback):
 
 
 
-dataset_location = "/media/data_dump_2/Sanyam/NLNL_Clean/Data/trec6"
-ULMFIT_MODEL_LOCATION = "/media/data_dump_2/Sanyam/NLNL_Clean/Saved/ULMFit"
+dataset_location = "/Data/trec6"
+ULMFIT_MODEL_LOCATION = "/Saved/ULMFit"
 
 datasets = read_trec6(dataset_location)
 
@@ -38,8 +38,8 @@ df_test = datasets["test"]
 
 
 df = pd.concat([df_train, df_dev])
-df.to_csv("/media/data_dump_2/Sanyam/NLNL_Clean/Data/sst5/Text/text.csv", index=False, header=False)
-df_test.to_csv("/media/data_dump_2/Sanyam/NLNL_Clean/Data/sst5/Text_test/text.csv", index=False, header=False)
+df.to_csv("/Data/sst5/Text/text.csv", index=False, header=False)
+df_test.to_csv("/Data/sst5/Text_test/text.csv", index=False, header=False)
 
 
 bs = 48  # batch_size
